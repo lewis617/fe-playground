@@ -2,8 +2,9 @@
 module.exports = {
   root: true,
   extends: ['@modern-js-app'],
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['../tsconfig.json'],
+  rules: {
+    'no-loop-func': 0,
+    'no-extend-native': 0,
+    'no-magic-numbers': 0,
   },
 };

@@ -3,13 +3,13 @@
  * 如果有相同的请求同时并行发起，要求其中一个能挂起并且等待另外一个请求返回并读取该缓存
  */
 
-const promiseFn = async (url: string) => {
+const promiseFn = async url => {
   console.info(`request ${url}`);
   return url;
 };
 
-const lookup = new Map<string, Promise<string>>();
-const request = (url: string) => {
+const lookup = new Map();
+const request = url => {
   let p = lookup.get(url);
   if (!p) {
     p = promiseFn(url);
