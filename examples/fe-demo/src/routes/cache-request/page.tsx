@@ -1,5 +1,4 @@
-// import './request';
-import './lastRequest';
+import './request';
 
 export default function page() {
   return <div>page</div>;
