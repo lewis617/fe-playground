@@ -1,0 +1,17 @@
+/* flex-grow: 1 */
+.container {
+  display: flex;
+  height: 200px;
+}
+.left {
+  width: 100px;
+  background: red;
+}
+.center {
+  flex-grow: 1;
+  background: green;
+}
+.right {
+  width: 100px;
+  background: yellow;
+}
