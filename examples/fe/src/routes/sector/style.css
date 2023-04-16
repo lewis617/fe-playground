@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+}
+/* 设置一个 border-radius 和长宽一样，其他三个为 0 */
+.sector {
+  background: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px 0 0;
+}
