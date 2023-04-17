@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s, height 2s, transform 2s, background-color 2s;
+}
+.box:hover {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  transform: rotate(180deg);
+}
