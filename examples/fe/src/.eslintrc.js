@@ -6,5 +6,6 @@ module.exports = {
     'no-loop-func': 0,
     'no-extend-native': 0,
     'no-magic-numbers': 0,
+    'no-alert': 0,
   },
 };
