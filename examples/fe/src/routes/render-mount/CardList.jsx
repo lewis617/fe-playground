@@ -19,6 +19,13 @@ function Card({ v }) {
 
 export default function CardList() {
   const [list, setlist] = useState([1, 2, 3]);
+  console.info('render', 'CardList');
+  useEffect(() => {
+    console.info('mount', 'CardList');
+    return () => {
+      console.info('unmount', 'CardList');
+    };
+  }, []);
   return (
     <div>
       {list.map(it => (
