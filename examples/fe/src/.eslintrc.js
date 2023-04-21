@@ -7,5 +7,6 @@ module.exports = {
     'no-extend-native': 0,
     'no-magic-numbers': 0,
     'no-alert': 0,
+    'no-console': 0,
   },
 };
