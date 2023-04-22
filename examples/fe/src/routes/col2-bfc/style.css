@@ -1,0 +1,13 @@
+.container > div {
+  height: 500px;
+}
+.left {
+  float: left;
+  width: 100px;
+  border: 10px solid red;
+}
+.right {
+  /* 该属性触发 BFC，BFC 不和 float 元素重叠 */
+  overflow: hidden;
+  border: 10px solid green;
+}
