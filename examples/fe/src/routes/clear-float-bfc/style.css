@@ -1,0 +1,8 @@
+.container {
+  border: 1px solid red;
+  /* 触发BFC，BFC里的float参与高度计算 */
+  overflow: hidden;
+}
+.float {
+  float: left;
+}
