@@ -1,0 +1,19 @@
+.container > div {
+  height: 500px;
+}
+.left {
+  float: left;
+  width: 100px;
+  border: 10px solid red;
+}
+/* 注意 right 要放到 center 前，否则 right 就被挤到下一行了 */
+.right {
+  float: right;
+  width: 100px;
+  border: 10px solid yellow;
+}
+.center {
+  /* 该属性触发 BFC，BFC 不和 float 元素重叠 */
+  overflow: hidden;
+  border: 10px solid green;
+}
