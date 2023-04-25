@@ -1,12 +1,12 @@
 function compose(...middlewares) {
-  return async ctx => {
-    const dispatch = i => {
+  return ctx => {
+    const dispatch = async i => {
       if (i === middlewares.length) {
         return;
       }
-      middlewares[i](ctx, () => dispatch(i + 1));
+      await middlewares[i](ctx, () => dispatch(i + 1));
     };
-    dispatch(0);
+    return dispatch(0);
   };
 }
 
