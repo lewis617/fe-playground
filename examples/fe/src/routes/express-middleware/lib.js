@@ -17,6 +17,19 @@ class App {
     );
     main();
   }
+
+  /**
+   * 算法二：使用 dispatch(i)，用 () => dispatch(i + 1) 模拟 next
+   */
+  run2() {
+    const dispatch = i => {
+      if (i === this.fnList.length) {
+        return;
+      }
+      this.fnList[i](() => dispatch(i + 1));
+    };
+    dispatch(0);
+  }
 }
 const app = new App();
 
@@ -28,4 +41,5 @@ app.use(next => {
   next();
 });
 
-app.run(); // 500ms -> 123
+// app.run(); // 500ms -> 123
+app.run2(); // 500ms -> 123
