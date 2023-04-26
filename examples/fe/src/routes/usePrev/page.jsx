@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import usePrev from './usePrev';
+import usePrev from './lib';
 
 export default function Page() {
   const [value, setValue] = useState('');

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useDebounce from './useDebounce';
+import useDebounce from './lib';
 
 export default function Page() {
   const [value, setValue] = useState('');
